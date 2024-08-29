@@ -1,0 +1,374 @@
+*{
+font-family: 'Helvetica', 'sans-serif';
+padding: 0;
+margin: 0;
+}
+
+.bodyHeader {
+background-color: #b9e3e4;
+color: #072152;
+padding: 65px;
+text-align: center;
+box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.logo_tut{
+  float: left;
+  margin-top: 5px;
+  margin-left: 40px;
+}
+
+.logo_vedc{
+  float: right;
+  margin-top: 15px;
+  margin-right: 40px;
+}
+
+.pos_font{
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(95, 157, 159, 0.66);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.pos_font h1{
+    text-align: center;
+}
+
+.navigation{
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  margin: 10px;
+}
+
+.copy{
+text-align: center;
+font-family: Gadugi;
+margin-top: 2%;
+}
+
+.gauge-card-7 h4{ /* mengatur font status*/
+  font-size: 25px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  padding: 5px;
+  text-align: center;
+  color: #e1b48d;
+  font-family: "Agency FB";
+}
+
+.gauge-card-7 h5{ /* mengatur font  warning dan safe*/
+  font-size: 20px;
+  margin-top: 8px;
+  color: rgb(255, 234, 0);
+}
+
+.main-card h3{ /* setting font garden, terrace, room, dan alarm*/
+font-size: 16px;
+margin-top: 10px;
+margin-bottom: 10px;
+text-align: center;
+}
+
+.main-content h4{
+font-size: 20px;
+margin-top: -5px;
+text-align: center;
+}
+
+.gauge-container .gauge-card-7 .lamp{ /* mengatur font lamp garden, terrace, room*/
+  font-size: 15px;
+  text-align: start;
+  color: #e1b48d;
+}
+
+
+
+/* GAUGE CARD */
+
+.gauge-container{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows: repeat(3, 1fr);
+column-gap: 5px;
+row-gap: 10px;
+min-height: 20%;
+margin-top: 10px;
+margin-right: 15px;
+margin-left: 7px;
+color: #ffffff;
+text-align: center;
+}
+
+.gauge-card-1{
+background-color: #344966;
+grid-column: 1;
+grid-row: 1 / span 1;
+padding: 20px;
+margin-left: 10px;
+margin-right: 10px;
+width: 80%;
+box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.gauge-card-2{
+background-color: #344966;
+grid-column: 2;
+grid-row: 1 / span 1;
+padding: 20px;
+margin-left: 10px;
+margin-right: 10px;
+width: 80%;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.gauge-card-3{
+background-color: #344966;
+grid-column: 3;
+grid-row: 1 / span 1;
+padding: 20px;
+margin-left: 10px;
+margin-right: 10px;
+width: 80%;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.gauge-card-4{
+background-color: #344966;
+grid-column: 4;
+grid-row: 1 / span 1;
+padding: 20px;
+margin-left: 10px;
+margin-right: 10px;
+width: 80%;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.gauge-card-5{ /* gauge humidity dan temperature*/
+background-color: #344966;
+grid-column: 1 / span 2;
+grid-row: 2 / span 2;
+padding: 20px;
+margin-left: 10px;
+margin-right: 10px;
+width: 90%;
+height: 89%;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.gauge-card-5 canvas {
+position: absolute;
+width: 100%;
+height: 100%;
+}
+
+.gauge-card-6{
+background-color: #344966;
+grid-column: 5;
+grid-row: 1 / span 1;
+padding: 20px;
+margin-left: 10px;
+margin-right: 10px;
+width: 80%;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.gauge-card-7{
+background-color: rgba(7, 33, 82, 0.96);
+grid-column: 3;
+grid-row: 2 / span 2;
+padding: 20px;
+margin-left: 10px;
+margin-right: 10px;
+width: 80%;
+height: 89%;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.main-card-1{ /* control card push button garden*/
+background-color: #344966;
+grid-column: 4;
+grid-row: 2 / span 1;
+padding: 27px;
+margin-left: 10px;
+margin-right: 10px;
+width: 80%;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.main-card-2{ /* control card push button terrace*/
+background-color: #344966;
+grid-column: 5;
+grid-row: 2 / span 1;
+padding: 27px;
+margin-left: 10px;
+margin-right: 10px;
+width: 80%;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.main-card-3{ /* control card push button room*/
+background-color: #344966;
+grid-column: 4;
+grid-row: 3 / span 1;
+padding: 27px;
+margin-left: 10px;
+margin-right: 10px;
+width: 80%;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.main-card-4{ /* control card push button alarm*/
+background-color: #344966;
+grid-column: 5 ;
+grid-row: 3 / span 1 ;
+padding: 27px;
+margin-left: 10px;
+margin-right: 10px;
+width: 80%;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+
+/* BUTTON CONTROL ON OFF */
+
+.button-container{
+display: flex;
+background: #b6e5e6;
+border-radius: 15px;
+margin-left: 50px;
+margin-right: 50px;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+grid-row: 1 / span 1;
+z-index: 1;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 3px;
+  width: 70%;
+  cursor: pointer;
+  z-index: 1;
+}
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #f44336;} /* Merah */
+
+
+@media screen and (max-width: 800px) {
+   .gauge-container {
+     text-align: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+     display: flex;
+     width: 100%;
+  }
+  .gauge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+
+  }
+  .navigation, .pos_font h1 {
+    text-align: center;
+  }
+
+  .gauge-card-5 {
+    position: relative;
+    height: 400px;
+    margin: auto;
+    width: 80%;
+  }
+
+  .logo_tut{
+    position: relative;
+    width:  10%;
+  }
+  .logo_vedc{
+    width: %;
+    position: relative;
+  }
+
+}
+
+/* CHART */
+
+.gauge {
+  width: 100%;
+  position: relative;
+  top: -290px;
+  left: -50px;
+  max-width: 250px;
+  font-size: 35px;
+  color: #004033;
+}
+
+
+.main-card-1, .main-card-2, .main-card-3, .main-card-4{
+  width: 75%;
+}
+.main-card-1 .button-container, .main-card-2 .button-container, .main-card-3 .button-container, .main-card-4 .button-container{
+  margin: 0 auto;
+  width: 50%;
+}
+
+.gauge__body {
+  width: 100%;
+  height: 0;
+  padding-bottom: 50%;
+  background: #83afc8;
+  position: relative;
+  top: 300px;
+  left: 50px;
+  border-top-left-radius: 100% 200%;
+  border-top-right-radius: 100% 200%;
+  overflow: hidden;
+}
+
+.gauge__fill {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: inherit;
+  height: 100%;
+  background: #cee7e8;
+  transform-origin: center top;
+  transform: rotate(0.25turn);
+  transition: transform 0.2s ease-out;
+}
+
+.gauge__cover {
+  width: 75%;
+  height: 150%;
+  font-size: 20px; /* untuk mengatur tulisan satuan pada gauge*/
+  background: #344966;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* Text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25%;
+  box-sizing: border-box;
+  color: beige;
+}
