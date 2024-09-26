@@ -2,8 +2,8 @@
 import network, utime
 
 # Replace the following with your WIFI Credentials
-SSID = "ekoboe"
-SSI_PASSWORD = "hereko2801"
+SSID = "namaSSID"
+SSI_PASSWORD = "password"
 
 def do_connect():
     import network
